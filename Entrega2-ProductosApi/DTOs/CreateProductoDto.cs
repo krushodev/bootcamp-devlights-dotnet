@@ -9,7 +9,7 @@ public class CreateProductoDto
     public string Nombre { get; set; }
 
     [Required(ErrorMessage = "El precio es obligatorio.")]
-    [Range(0.01, double.MaxValue, ErrorMessage = "El precio debe ser mayor a 0.")]
+    [Range(0.01, 999999999, ErrorMessage = "El precio debe ser mayor a 0.")]
     public decimal? Precio { get; set; }
 
     [Required(ErrorMessage = "La categoría es obligatoria.")]
